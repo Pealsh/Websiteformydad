@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PUB-Apache</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>pubapache - Official Website</title>
+    <meta name="description" content="パブアパッチは札幌すすきのにあるリニューアルオープンした老舗パブです。地図、メニュー、ニュースはこちら。">
+    <meta name="keywords" content="パブアパッチ, すすきの, パブ, 札幌, pubapache">
     <!-- Google Fonts などを利用する場合 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -35,9 +38,11 @@
           
         <nav class="nav-menu" id="navMenu">
           <ul>
+            <div class="close-btn" id="closeBtn">×</div>
             <li><a href="#hero">Home</a></li>
             <li><a href="#place">Place</a></li>
             <li><a href="#menu">Menu</a></li>
+            <!-- <li><a href="#news">News</a></li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -50,74 +55,80 @@
       </div>
     </header>
 
-    <!-- ヒーローセクション -->
-    <section id="hero">
-      <div class="hero-content">
-        <h1>Welcome to <span><span class="special-font">パブ</span> アパッチ</span></h1>
-        <p>
-            1986年にオープンしました老舗パブ アパッチの看板と空間を受け継ぐこととなり、<br>2023年7月1日リニューアルオープンいたしました。<br>
-            前マスターのようにお客様から愛される居心地の良いお店にしたいと思っています！<br>
-            店内は、面影を残しづつ、パワーアップしたパブ アパッチをお楽しみにしてください。<br>
-            -紹介制・会委員制-
-        </p>
-        <a href="#menu" class="btn-cta">View Menu</a>
+    <!-- 横スクロールコンテナ -->
+    <div class="horizontal-scroll-container">
+      <div class="horizontal-scroll-wrapper">
+        
+        <!-- ヒーローセクション -->
+        <section id="hero" class="horizontal-section">
+          <div class="hero-content">
+            <h1>Welcome to<br><span><span class="special-font">パブ</span> アパッチ</span></h1>
+            <p>
+                1986年にオープンしました老舗パブアパッチの看板と空間を受け継ぐこととなり、<br>
+                2023年7月1日リニューアルオープンいたしました。<br>
+                前マスターのようにお客様から愛される居心地の良いお店にしたいと思っています！<br>
+                店内は、面影を残しづつ、パワーアップしたパブアパッチをお楽しみにしてください。<br>
+                -紹介制・会委員制-
+            </p>
+            <a href="#menu" class="btn-cta">View Menu</a>
+          </div>
+        </section>
+
+        <!-- place セクション -->
+        <section id="place" class="horizontal-section">
+            <div class="section-wrapper">
+              <h2>Place</h2>
+              <a href="https://maps.app.goo.gl/AQhEf5qqgCRTjY3L9?g_st=ic" target="_blank" rel="noopener noreferrer">
+                <div id="map" class="map-container"></div>
+              </a>
+              <p>
+                address: 
+                <a href="https://maps.app.goo.gl/AQhEf5qqgCRTjY3L9?g_st=ic" target="_blank" rel="noopener noreferrer">
+                  〒064-0805 北海道札幌市中央区南５条西５丁目２０ すすきの5.5ビル 3階
+                </a>
+              </p>
+            </div>
+        </section>
+
+        <!-- Menu セクション -->
+        <section id="menu" class="horizontal-section">
+          <div class="section-wrapper">
+                <h2>Our Menu</h2>
+                <div class="menu-items">
+                  <p class="menu-item">beer</p>
+                  <p class="menu-item">wine</p>
+                  <p class="menu-item">whiskey</p>
+                  <p class="menu-item">champagne</p>
+                  <p class="menu-item">& more</p>
+                </div>
+              
+          </div>
+        </section>
+
+        <!-- Contact セクション -->
+        <section id="contact" class="horizontal-section">
+          <div class="section-wrapper contact-wrapper">
+            <h2>Contact / Reservation</h2>
+            <p>
+                お問い合わせはInstagramまたはお電話で承っております。<br />
+                TEL: <a href="tel:080-2100-0002">080-2100-0002</a>
+              </p>
+              <a href="https://www.instagram.com/pub_apache/profilecard/?igsh=bDQ0em5md2N1bWg2" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="instagram-link">
+                <img src="ins.svg" alt="Instagram" class="instagram-icon" />
+              </a>
+          </div>
+        </section>
+        
       </div>
-    </section>
+    </div>
 
-    <!-- place セクション -->
-    <section id="place">
-        <div class="section-wrapper">
-          <h2>Place</h2>
-          <a href="https://maps.app.goo.gl/AQhEf5qqgCRTjY3L9?g_st=ic" target="_blank" rel="noopener noreferrer">
-            <div id="map" class="map-container"></div>
-          </a>
-          <p>
-            address: 
-            <a href="https://maps.app.goo.gl/AQhEf5qqgCRTjY3L9?g_st=ic" target="_blank" rel="noopener noreferrer">
-              〒064-0805 北海道札幌市中央区南５条西５丁目２０
-            </a>
-          </p>
-        </div>
-    </section>
-      
-      
-      
-      
-
-    <!-- Menu セクション -->
-    <section id="menu">
-      <div class="section-wrapper">
-        <h2>Our Menu</h2>
-        <div>
-           <p>beer</p> 
-           <p>wine<p>
-           <p>whiskey</p>
-           <p>champagne</p>
-           <p>& more</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact セクション -->
-    <section id="contact">
-      <div class="section-wrapper contact-wrapper">
-        <h2>Contact / Reservation</h2>
-        <p>
-            お問い合わせはInstagramまたはお電話で承っております。<br />
-            TEL: <a href="tel:080-2100-0002">080-2100-0002</a>
-          </p>
-          <a href="https://www.instagram.com/pub_apache/profilecard/?igsh=bDQ0em5md2N1bWg2" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="instagram-link">
-            <img src="ins.svg" alt="Instagram" class="instagram-icon" />
-          </a>
-          
-
-          
-          
-      </div>
-    </section>
+    <!-- プログレスバー -->
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
 
     <!-- フッター -->
     <footer>
@@ -125,6 +136,7 @@
     </footer>
 
     <!-- JSファイルの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </body>

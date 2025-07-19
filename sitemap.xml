@@ -1,0 +1,27 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://pubapach.com/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pubapach.com/#place</loc>
+    <lastmod>2024-12-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pubapach.com/#menu</loc>
+    <lastmod>2024-12-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pubapach.com/#news</loc>
+    <lastmod>2024-12-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pubapach.com/#contact</loc>
+    <lastmod>2024-12-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
